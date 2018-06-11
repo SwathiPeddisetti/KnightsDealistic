@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/ReqStoreNo"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="No" />
+
+    <TextView
+        android:id="@+id/ReqStoreName"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/ReqStoreDesc"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Desc" />
+
+    <TextView
+        android:id="@+id/ReqStoreLocation"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Loc" />
+
+    <TextView
+        android:id="@+id/ReqStoreActiveTill"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Active Till"/>
+
+
+    <ImageButton
+        android:id="@+id/btnReqStoreAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:src="@drawable/tick"
+        android:clickable="true"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/btnReqStoreReject"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:src="@drawable/cross"
+        android:clickable="true"
+        android:textSize="12sp" />
+
+</TableRow>

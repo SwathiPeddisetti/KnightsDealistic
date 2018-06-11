@@ -1,0 +1,140 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".StoreRegistration"
+    android:orientation="vertical"
+    android:name="StoreRegistration"
+    android:label="@string/app_name">
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:orientation="vertical" >
+
+        <include layout="@layout/header"
+            android:id="@+id/includeHeader" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=" Registration"
+            android:textColor="#FFFFFF"
+            android:id="@+id/lblRegistration"
+            android:textAlignment="center"
+            android:layout_below="@+id/includeHeader"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtStoreName"
+            android:hint="Store Name"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Store Description"
+            android:ems="10"
+            android:id="@+id/txtStoreDescription"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Password"
+            android:ems="10"
+            android:id="@+id/txtStorePassword"
+            android:textSize="16dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Location"
+            android:ems="10"
+            android:id="@+id/txtStoreLocation"
+            android:textSize="16dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/txtEmailId"
+            android:hint="email ID"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Mobile Number"
+            android:ems="10"
+            android:id="@+id/txtMobileNumber"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/ddlSecurityQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:entries="@array/DropDownSecurityQuestions"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Security Answer"
+            android:ems="10"
+            android:id="@+id/txtSecurityAnswer"
+            android:textSize="16dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/dtStoreActiveTo"
+            android:hint="Active Till"
+            android:textSize="16dp" />
+
+        <LinearLayout  android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/storeRegLayout">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:id="@+id/btnBackStoreReg"
+                style="@style/Button"
+                android:layout_gravity="center_horizontal"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/btnSubmit"
+                style="@style/Button"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESET"
+                android:id="@+id/btnClearStoreReg"
+                style="@style/Button"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

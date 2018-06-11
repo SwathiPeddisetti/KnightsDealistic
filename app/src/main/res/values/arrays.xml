@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="DropDownSecurityQuestions">
+        <item>What is your mother maiden name?</item>
+        <item>What is your first car?</item>
+        <item>Who is your favourite professor?</item>
+    </string-array>
+
+</resources>

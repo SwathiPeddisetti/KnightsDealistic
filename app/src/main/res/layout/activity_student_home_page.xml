@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ucf.knightsdealistic.StudentHomePage">
+    <include layout="@layout/header"
+        android:id="@+id/includeHeader" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayoutHeader"
+        android:layout_below="@+id/includeHeader">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello,Student"
+            android:id="@+id/helloStudentName"
+            android:layout_gravity="right"
+            android:layout_row="0"
+            android:layout_column="4" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:id="@+id/txtlogout"
+            android:layout_gravity="right"
+            android:layout_row="0"
+            android:layout_column="8" />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bigdeallayout"
+        android:layout_below="@+id/gridLayoutHeader">
+
+        <TextView
+            android:id="@+id/bigDealOfTheDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Big Deal of the Day" />
+    </LinearLayout>
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabHost1"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/bigdeallayout">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:id="@+id/tabdealsoftheday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+                    <TableLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/viewStoreDealsTable"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:shrinkColumns="*"
+                        android:stretchColumns="*"
+                        android:orientation="horizontal">
+                    </TableLayout>
+                    <ListView
+                        android:id="@+id/listDealsOfTheDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabupcomingdealsoftheday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+                    <TableLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/viewStoreDealsTableFuture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:shrinkColumns="*"
+                        android:stretchColumns="*"
+                        android:orientation="horizontal">
+                    </TableLayout>
+                    <ListView
+                        android:id="@+id/listUpcomingDeals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+</RelativeLayout>

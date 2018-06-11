@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ReqBigDealNo"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="No" />
+
+        <TextView
+            android:id="@+id/ReqBigDealName"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/ReqBigDealDesc"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Desc" />
+
+        <TextView
+            android:id="@+id/ReqBigDealPostedOn"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Location" />
+
+        <TextView
+            android:id="@+id/ReqBigDealAmount"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/btnReqBigDealAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/tick"
+            android:clickable="true"
+            android:textSize="12sp" />
+
+
+    </TableRow>
